@@ -9,7 +9,6 @@ export default function TelaAvisos(){
         <>
             <Header/>
             <Conteudo>
-                <ion-icon name="arrow-back-outline" onClick={() => {navigate("/home")}}></ion-icon>
                 <p>Nenhum aviso encontrado</p>
             </Conteudo>
             

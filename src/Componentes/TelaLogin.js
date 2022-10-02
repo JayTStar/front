@@ -36,7 +36,7 @@ export default function TelaLogin(){
 
     return(<>
         <Conteudo>
-            <img src={Logo} alt="Logo"/>
+            <h1>UFFight</h1>
             <form>
                 <input placeholder="matricula" type="email" onChange={(e) => {setMatricula(e.target.value)}}/>
                 <input placeholder="senha" type="password" onChange={(e) => {setSenha(e.target.value)}}/>
@@ -55,11 +55,21 @@ const Conteudo = styled.main`
     align-items: center;
     justify-content: space-around;
 
-    background-color: #D6D6D8;
+    background: rgb(15,12,79);
+    background: linear-gradient(45deg, rgba(15,12,79,1) 0%, rgba(67,63,140,1) 20%, rgba(214,214,216,1) 100%); 
 
-    img{
-        width: 200px;
-        height: 200px;
+    h1{
+        width: auto;
+        height: auto;
+
+        display: flex;
+        flex-direction: center;
+        align-items: center;
+
+        font-family: 'Rubik Dirt', cursive;
+        font-weight: 400;
+        font-size: 100px;
+        color: #09072F;
     }
 
     form{
@@ -71,33 +81,39 @@ const Conteudo = styled.main`
     }
 
     input{
-        width: 303px;
-        height: 45px;
+        width: 400px;
+        height: 50px;
+
         background-color: #FFFFFF;
         margin: 10px;
-        border: 1px solid #09072F;
+        border: 2px solid #09072F;
         box-sizing: border-box;
         border-radius: 5px;
         
+        font-family: 'M PLUS Rounded 1c', sans-serif;
         font-weight: 400;
-        font-size: 19.976px;
-        line-height: 25px;
+        font-size: 25px;
         color: #09072F;
     }
 
     div{
         width: 303px;
         height: 45px;
-        background-color: #09072F;
+        background-color: #D6D6D8;
         border-radius: 5px;
-        font-style: normal;
+
+        font-family: 'M PLUS Rounded 1c', sans-serif;
         font-weight: 400;
-        font-size: 20.976px;
-        line-height: 26px;
-        text-decoration: none;
+        font-size: 25px;
+
         display: flex;
         justify-content: center;
         align-items: center;
+        color: #09072F;
+    }
+
+    div:hover{
+        background-color: #09072F;
         color: #D6D6D8;
     }
 `

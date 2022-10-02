@@ -9,7 +9,6 @@ export default function TelaRobos (){
         <>
             <Header/>
             <Conteudo>
-                <ion-icon name="arrow-back-outline" onClick={() => {navigate("/home")}}></ion-icon>
                 <p>Nenhum robô cadastrado</p>
             </Conteudo>
             

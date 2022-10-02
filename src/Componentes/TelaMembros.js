@@ -51,7 +51,6 @@ export default function TelaMembros(){
             <Header/>
             
             <Conteudo>
-                <ion-icon id="back" name="arrow-back-outline" onClick={() => {navigate("/home")}}></ion-icon>
                 {membro}
                 <ion-icon id="add" name="add-circle" onClick={() => {navigate("/cadastro")}}></ion-icon>
             </Conteudo>
