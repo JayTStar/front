@@ -87,6 +87,9 @@ const Conteudo = styled.header`
         font-size: 50px;
         color: #D6D6D8;
     }
+    p: hover{
+        cursor: pointer;
+    }
 `
 
 const Hidden = styled.div`
@@ -119,8 +122,12 @@ const Hidden = styled.div`
 
         display: ${props => props.state};
         position: absolute;
-        top: 20px;
+        top: 0;
         left:0;
+
+        border-bottom: 2px dashed #0f0c4f;
+
+        padding: 20px 0;
 
         p{
             font-family: 'M PLUS Rounded 1c', sans-serif;
@@ -137,13 +144,16 @@ const Hidden = styled.div`
         width: 100%;
         height: 100%;
 
-        margin: 70px 0;
+        margin-top: 100px;
 
         display: flex;
         flex-direction: column;
         align-items: center;
 
         p{
+            width: 90%;
+            height:10%;
+
             position: static;
             display: ${props => props.state};
 
@@ -151,6 +161,14 @@ const Hidden = styled.div`
             font-weight: 400;
             font-size: ${props => props.width}px;
             color: #0f0c4f;
+
+            border: 2px solid #0f0c4f;
+            border-radius: 10px;
+
+            margin: 10px 0;
+        }
+        p: hover{
+            cursor: pointer;
         }
     }
 `
