@@ -56,7 +56,7 @@ export default function TelaCadastro(){
             <select onChange={(e) => {setCargo(e.target.value)}}>
                 <option value={""}>Selecionar cargo</option>
                 {cargos.map(elemento => {
-                    return <option value={elemento.id} >{elemento.nome}</option>
+                    if(elemento !== null){return <option value={elemento.id} >{elemento.nome}</option>}
                 })}
             </select>
         )
@@ -112,7 +112,6 @@ export default function TelaCadastro(){
         <>
             <Header/>
             <Conteudo>
-                <ion-icon name="arrow-back-outline" onClick={() => {navigate("/membros")}}></ion-icon>
                 <form>
                     <input placeholder="Nome" type="text" onChange={(e) => {setNome(e.target.value)}}/>
                     <input placeholder="Matrícula" type="text" onChange={(e) => {setMatricula(e.target.value)}}/>

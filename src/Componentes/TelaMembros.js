@@ -37,7 +37,7 @@ export default function TelaMembros(){
         else{
             return(
                 <ul>
-                    {membros.map(element => {return <Membro info = {element} />})}
+                    {membros.map(element => {if(element !== null){return <Membro info = {element} />}})}
                 </ul>
             )
         }
